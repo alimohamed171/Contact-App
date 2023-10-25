@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="@dimen/_10sdp">
+
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="Ali Mohamed "
+           android:ellipsize="end"
+           android:maxLines="1"
+           android:textSize="@dimen/_18sdp"
+           app:layout_constraintEnd_toStartOf="@+id/call"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/phone"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:text="01287272445"
+           android:textSize="@dimen/_18sdp"
+           app:layout_constraintEnd_toStartOf="@+id/edit"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/name" />
+
+       <ImageView
+           android:id="@+id/call"
+           android:layout_width="@dimen/_40sdp"
+           android:layout_height="@dimen/_30sdp"
+           android:src="@drawable/baseline_call_24"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"/>
+       <ImageView
+           android:id="@+id/delete"
+           android:layout_width="@dimen/_40sdp"
+           android:layout_height="@dimen/_30sdp"
+           android:src="@drawable/baseline_delete_24"
+           app:layout_constraintTop_toBottomOf="@id/call"
+           app:layout_constraintEnd_toEndOf="parent"/>
+
+       <ImageView
+           android:id="@+id/edit"
+           android:layout_width="@dimen/_40sdp"
+           android:layout_height="@dimen/_30sdp"
+
+           android:src="@drawable/baseline_edit_24"
+           app:layout_constraintEnd_toStartOf="@id/delete"
+           app:layout_constraintTop_toBottomOf="@id/call" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
